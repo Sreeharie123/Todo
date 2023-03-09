@@ -7,12 +7,16 @@ import { DashBordComponent } from './components/dash-bord/dash-bord.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { FavariteComponent } from './components/favarite/favarite.component';
+import { ImportantComponent } from './components/important/important.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashBordComponent,
-    NavComponent
+    NavComponent,
+    FavariteComponent,
+    ImportantComponent
   ],
   imports: [
     BrowserModule,

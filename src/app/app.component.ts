@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Todo';
+
+  value?:boolean;
+
+  open(event:any){
+
+  this.value=event;
+
+  }
+
+  home(value:boolean){
+    this.value=!value
+  }
 }

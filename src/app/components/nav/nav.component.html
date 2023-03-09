@@ -3,7 +3,15 @@
     <div class="flex items-center gap-4">
       <button
         mat-icon-button
-        class="example-icon"
+        class="example-icon md:hidden"
+        aria-label="Example icon-button with menu icon" (click)="open(value)"
+      >
+        <mat-icon class="font-black">menu</mat-icon>
+      </button>
+
+      <button
+        mat-icon-button
+        class="example-icon max-md:hidden"
         aria-label="Example icon-button with menu icon"
       >
         <mat-icon class="font-black">menu</mat-icon>

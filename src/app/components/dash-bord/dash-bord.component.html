@@ -1,28 +1,24 @@
-<div class="h-screen flex">
 
-<div class="flex-[2] bg-white px-4 flex flex-col gap-4 mt-4">
+  <div class="h-screen">
+  <div class="h-1/2">
+    <p class="md:text-3xl text-xl">Tasks</p>
+    <form class="md:px-6 md:py-3">
+      <mat-form-field class="w-full h-20 border-none shadow-inner">
+        <mat-icon matSuffix>add</mat-icon>
+        <input type="text" matInput placeholder="Add Tasks" class="border">
+        <mat-label>Add</mat-label>
+      </mat-form-field>
+    </form>
+  </div>
+  <div>
+    <p class="md:text-3xl text-xl">Completed</p>
+    <form class="md:px-6 md:py-3">
+      <mat-form-field class="w-full h-20 shadow-inner">
+        <mat-icon matSuffix>star</mat-icon>
+        <input type="text" matInput placeholder="Add Tasks" disabled>
+        <mat-label>Completed</mat-label>
+      </mat-form-field>
+    </form>
 
-  <mat-card class="flex flex-row gap-2 rounded-lg bg-slate-100 shadow-md active:bg-slate-300 cursor-pointer">
-    <mat-icon class="h-16 py-5 ml-5">home</mat-icon>
-    <mat-card-content class="w-fit h-16 py-5 text-lg">Home</mat-card-content>
-  </mat-card>
-
-
-  <mat-card class="flex flex-row gap-2 rounded-lg bg-slate-100 shadow-md active:bg-slate-300 cursor-pointer">
-    <mat-icon class="h-16 py-5 ml-5">star</mat-icon>
-    <mat-card-content class="w-fit h-16 py-5 text-lg">Favorite</mat-card-content>
-  </mat-card>
-
-  <mat-card class="flex flex-row gap-2 rounded-lg bg-slate-100 shadow-md active:bg-slate-300 cursor-pointer">
-    <mat-icon class="h-16 py-5 ml-5">flag</mat-icon>
-    <mat-card-content class="w-fit h-16 py-5 text-lg">Important</mat-card-content>
-  </mat-card>
-
-
-</div>
-
-<div class="bg-slate-50 flex-[12]">
-
-</div>
-
+  </div>
 </div>
